@@ -5,6 +5,8 @@ the README.md file with the project information and initially run
 
 ```shell
 .github/update_workflows.sh
+
+git checkout main
 .github/update_templates.sh
 
 # strongly suggested!
