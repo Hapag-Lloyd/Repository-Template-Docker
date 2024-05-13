@@ -11,4 +11,5 @@ git pull
 for branch in $(git branch --list "init-*"); do
   git checkout "$branch"
   git rebase main
+  git push
 done
