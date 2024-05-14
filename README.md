@@ -21,6 +21,9 @@ with the changes in the workflows. Carefully check the changes and merge them in
 This repository is used as a template repository for new Docker projects. Thus the newly created repository will have the same
 structure and configurations as this one.
 
+After merging into the `main` branch, use `.github/update_init_branches.sh` to merge these changes into the `init-` branches as
+well.
+
 ### `init-` branches
 
 The `init-` branches are used to initialize the project with the necessary files and configurations. Create them in this repository
