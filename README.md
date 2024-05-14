@@ -4,14 +4,15 @@ Template repository for Docker projects which are published on [DockerHub](https
 the README.md file with the project information and initially run
 
 ```shell
-.github/update_workflows.sh
-
 git checkout main
 .github/update_templates.sh
 
 # strongly suggested!
 pre-commit install -c .github/pre-commit-config.yaml
 ```
+
+In case a major release is published on the Workflow-Template repository, run `.github/update_workflows.sh`. This creates a PR
+with the changes in the workflows. Carefully check the changes and merge them into the `main` branch.
 
 ## Development
 
