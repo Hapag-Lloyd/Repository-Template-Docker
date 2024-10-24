@@ -13,7 +13,7 @@ on:
 jobs:
   default:
     # yamllint disable-line rule:line-length
-    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/docker_dockerhub_release_callable.yml@e92ddcae54be38624beb7297873890d78e9107c3
+    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/docker_dockerhub_release_callable.yml@4e13a92867f24e0517887f5e6f4c9f9e88b97bef
     secrets: inherit
     with:
       # TODO insert correct value for image-name
