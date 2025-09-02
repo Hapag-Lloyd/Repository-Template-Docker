@@ -29,7 +29,7 @@ ensure_dependencies_or_exit
 ensure_repo_preconditions_or_exit
 
 current_directory=$(pwd)
-latest_workflows_path=$(mktemp -d -t workflow-template-XXXXX)
+latest_workflows_path=$(mktemp -d -t repository-template-XXXXX)
 
 gh repo clone https://github.com/Hapag-Lloyd/Workflow-Templates.git "$latest_workflows_path"
 
@@ -37,7 +37,7 @@ gh repo clone https://github.com/Hapag-Lloyd/Workflow-Templates.git "$latest_wor
 (
   cd "$latest_workflows_path" || exit 7
 
-  ./update-workflows.sh "$current_directory" docker
+  ./update-workflows.sh "$current_directory" maven
 )
 
 rm -rf "$latest_workflows_path"
