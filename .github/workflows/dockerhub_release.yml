@@ -12,22 +12,5 @@ on:
 
 jobs:
   default:
-    # yamllint disable-line rule:line-length
-    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/docker_dockerhub_release_callable.yml@c815ffef37e1a8f85672cc59b15677bc93fa0e6d
+    uses: Hapag-Lloyd/Workflow-Templates/.github/workflows/dockerhub_release.yml@23fe0e49858d501e89bc26f0408c2b6b3b408d55 # 1.21.3
     secrets: inherit
-    with:
-      # TODO insert correct value for image-name
-      # type: string
-      # required: true
-      # description: Name of the image. Usually it is sensible to set this to the repository name
-      image-name: "my-special-value"
-      # TODO insert correct value for push
-      # type: boolean
-      # required: false
-      # description: Flag to enable the workflow to actually push the built image to the registry
-      push: "my-special-value"
-      # TODO insert correct value for upload-security-scan-results
-      # type: boolean
-      # required: false
-      # description: Upload results of trivy scan of docker image to Github Security page
-      upload-security-scan-results: "my-special-value"
